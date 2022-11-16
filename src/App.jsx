@@ -1,10 +1,8 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import { Searchbar, Sidebar, MusicPlayer, TopPlay, Loader } from './components';
 import { ArtistDetails, Discover, Southafrica, Search, SongDetails } from './pages';
-import { useGetSongsByCountryQuery } from './redux/services/shazam';
 
 const App = () => {
   const { activeSong } = useSelector((state) => state.player);
@@ -16,7 +14,7 @@ const App = () => {
             <div className="text-[#FFDDE2FF] px-4 min-w-[300px] justify-center md:flex hidden bg-[#191624]">
               <Sidebar/>
             </div>
-            <div className="px-6 h-[calc(100vh-100px)] overflow-y-scroll flex xl:flex-row flex-col-reverse">
+            <div className="w-full px-6 h-[calc(100vh-100px)] overflow-y-scroll flex xl:flex-row flex-col-reverse">
               <div className="flex-1 h-fit pb-40">
                 <Routes>
                   <Route path="/" element={<Discover />} />

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FiSearch } from 'react-icons/fi'
-
+import Alpha from '../assets/alphagreen.png'
 
 const Searchbar = () => {
   const navigate = useNavigate()
@@ -13,9 +13,12 @@ const Searchbar = () => {
   }
   return (
   <div className="flex items-center justify-around bg-[#00203FFF] h-[100px]">
-    <div className="">
-
-    </div>
+      <Link to='/'>
+      <div className="flex text-center items-center">
+          <img src={Alpha}  alt='logo' className="w-8 h-8"/>
+          <h1 className="text-[25px] font-bold">lpha</h1>
+      </div>
+    </Link>
     <div className="w-[400px]">
       <form autoComplete="off" className="p2" onSubmit={handleSubmit}>
         <div className="flex flex-row justify-start items-center bg-white p-2 rounded-sm mx-2">

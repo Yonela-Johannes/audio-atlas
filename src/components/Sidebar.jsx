@@ -34,15 +34,6 @@ const Sidebar = () => {
       <div className="">
         <NavLinks />
       </div>
-      <div className="absolute text-[#008C76FF] block top-6 right-3">
-        {mobileMenuOpen ? (
-          <RiCloseLine className="w-7 h-7" />
-          ) : (
-          <HiOutlineMenu className="w-7 h-7" />
-        )
-
-        }
-      </div>
     </>
 )};
 
