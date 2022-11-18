@@ -3,6 +3,7 @@ import Searchbar from './Searchbar';
 import SongCard from './SongCard';
 import TopPlay from './TopPlay';
 import ArtistCard from './ArtistCard';
+import RelatedArtists from './RelatedArtist';
 import DetailsHeader from './DetailsHeader';
 import SongBar from './SongBar';
 import RelatedSongs from './RelatedSongs';
@@ -22,4 +23,5 @@ export {
   MusicPlayer,
   Loader,
   Error,
+  RelatedArtists
 };

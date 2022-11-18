@@ -26,7 +26,6 @@ const NavLinks = () => (
     }
   </div>
 )
-// Navigation
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
