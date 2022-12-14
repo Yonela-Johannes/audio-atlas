@@ -16,9 +16,9 @@ const TopChartCart = ({song, i, isPlaying, activeSong, handlePauseClick, handleP
         <Link to={`/songs/${song.key}`}>
           <p className="font-bold text-base ml-3">{song?.title.slice(0, 15) + "..."}</p>
         </Link>
-        <Link to={`/artist/${song?.artists[0].adamid}`}>
+        {/* <Link to={`/artist/${song?.artists[1]?.adamid}`}>
           <p className="font-bold text-[14px] ml-3 text-[#00203FFF] truncate">{song?.subtitle > 15 ? song?.subtitle.slice(0, 15) + "..." : song?.subtitle }</p>
-        </Link>
+        </Link> */}
       </div>
     </div>
       <PlayPause
