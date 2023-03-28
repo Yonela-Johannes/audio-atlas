@@ -1,10 +1,9 @@
 {
   "name": "Audio Atlas",
-  "homepage": "https://yonela-johannes.github.io/audioatlas",
+  "homepage": "https://yonela-johannes.github.io/audio-atlas",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start" :"vite --host",
     "dev": "vite --host",
