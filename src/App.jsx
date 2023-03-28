@@ -7,7 +7,7 @@ import { ArtistDetails, Discover, Southafrica, Search, SongDetails } from './pag
 const App = () => {
   const { activeSong } = useSelector((state) => state.player);
   return (
-      <div className="flex-1 flex flex-col text-[#008C76FF] bg-[#FFDDE2FF]">
+      <div className="flex-1 flex flex-col text-[#008C76FF] bg-[#ffffff]">
         <Searchbar />
 
           <div className="flex">
