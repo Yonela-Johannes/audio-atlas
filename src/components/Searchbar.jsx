@@ -16,7 +16,7 @@ const Searchbar = () => {
       <Link to='/'>
       <div className="flex text-center items-center">
           <img src={Alpha}  alt='logo' className="w-8 h-8"/>
-          <h1 className="text-[25px] font-bold">lpha</h1>
+          <h1 className="text-[25px] font-bold">Audio Atlas</h1>
       </div>
     </Link>
     <div className="w-[400px]">
