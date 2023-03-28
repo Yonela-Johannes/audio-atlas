@@ -4,7 +4,7 @@ A web application built with React, Vite, and Tailwind CSS that uses the Shazam 
 
 ## Demo
 
-You can check out a live demo of the application [here](https://shazam-music-player.netlify.app/).
+You can check out a live demo of the application [here](https://yonela-johannes.github.io/audio-atlas/").
 
 ## Features
 
@@ -27,25 +27,22 @@ The following technologies were used to build this application:
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/shazam-music-player.git
+git clone https://github.com/your-username/audio-atlas.git
 
 
 2. Install the dependencies:
 
-cd shazam-music-player
+cd audio-atlas
 npm install
 
 3. Create a `.env` file in the root directory of the project and add the following environment variable:
 
-REACT_APP_SHAZAM_API_KEY=your-api-key
+REACT_APP_AUDIOATLAS_API_KEY=your-api-key
 
-You can obtain an API key from the [Shazam Developer Portal](https://developers.shazam.com/).
+You can obtain an API key from the [Rapid Api: Shazam Core](https://rapidapi.com/tipsters/api/shazam-core/).
 
 4. Start the development server:
-
-
 npm run dev
-
 
 5. Open the application in your browser at http://localhost:3000.
 
@@ -56,3 +53,4 @@ If you would like to contribute to this project, please fork the repository and 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+  
