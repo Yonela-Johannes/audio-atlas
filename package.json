@@ -1,8 +1,11 @@
 {
-  "name": "elagant-music-app",
+  "name": "Audio Atlas",
+  "homepage": "https://yonela-johannes.github.io/audioatlas",
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start" :"vite --host",
     "dev": "vite --host",
     "build": "vite build",
