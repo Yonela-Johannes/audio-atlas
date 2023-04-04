@@ -21,7 +21,7 @@ const SongDetails = () => {
                         ? data?.result?.sections[1].text.map((line, i) => (
                             <p key={i} className="text-base my-1 text-[#191624]">{line}</p>
                         )) :
-                        (<p key={i} className="my-1 text-[#191624]">Sorry , no lyrics found!</p>)
+                        (<p className="my-1 text-[#191624]">Sorry , no lyrics found!</p>)
                     }
                 </div>
             </div>
