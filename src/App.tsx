@@ -1,8 +1,7 @@
-import axios from 'axios';
 import { useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import { Searchbar, Sidebar, MusicPlayer, TopPlay, Loader } from './components';
-import { ArtistDetails, Discover, Southafrica, Search, SongDetails } from './pages';
+import { Searchbar, Sidebar, MusicPlayer, Loader } from './components';
+import { Southafrica, Search, SongDetails } from './pages';
 
 const App = () => {
   const { activeSong } = useSelector((state) => state.player);
@@ -17,15 +16,12 @@ const App = () => {
             <div className="w-full px-6 h-[calc(100vh-100px)] overflow-y-scroll flex xl:flex-row flex-col-reverse">
               <div className="flex-1 h-fit pb-40">
                 <Routes>
-                  <Route path="/" element={<Discover />} />
-                  <Route path="/south-africa" element={<Southafrica />} />
-                  <Route path="/artists/:id" element={<ArtistDetails />} />
+                  <Route path="/" element={<Southafrica />} />
                   <Route path="/songs/:songid" element={<SongDetails />} />
                   <Route path="/search/:searchTerm" element={<Search />} />
                 </Routes>
               </div>
               <div className="xl:sticky bg-[#008C76FF] p-2 text-[#FFDDE2FF] relative top-0 h-fit">
-            <TopPlay />
           </div>
         </div>
       </div>

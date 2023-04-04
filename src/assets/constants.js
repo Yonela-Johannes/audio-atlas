@@ -1,6 +1,5 @@
-import { HiOutlineHashtag, HiOutlineHome, HiOutlinePhotograph, HiOutlineUserGroup } from 'react-icons/hi';
 import { BsFileMusic } from 'react-icons/bs';
-import { GiSouthAfrica } from 'react-icons/gi';
+
 
 export const genres = [
   { title: 'Pop', value: 'POP' },
@@ -13,5 +12,4 @@ export const genres = [
 
 export const links = [
   { name: 'Music', to: '/', icon: BsFileMusic },
-  { name: 'South Africa', to: '/south-africa', icon: GiSouthAfrica },
 ];
