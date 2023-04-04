@@ -13,7 +13,6 @@ export const shazamCoreApi = createApi({
         getSongsByCountry: builder.query({ query: () => `top_country_tracks/?country_code=ZA&limit=50&start_from=1`}),
         getSongsSearch: builder.query({ query: (text) => `search_track/?query=${text}&limit=20&start_from=1`}),
         getSongDetails: builder.query({ query: ({songid}) => `track_about/?track_id=${songid}`}),
-        getSongRelated: builder.query({ query: ({songid}) => `related_tracks/?track_id${songid}&limit=15&start_from=1`}),
     })
 })
 
@@ -21,5 +20,4 @@ export const {
     useGetSongsByCountryQuery,
     useGetSongsSearchQuery,
     useGetSongDetailsQuery,
-    useGetSongRelatedQuery,
 } = shazamCoreApi;
